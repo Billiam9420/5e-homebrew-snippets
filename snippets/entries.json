@@ -39,6 +39,19 @@
         ],
         "description": "Headless entries block, for going down one header level."
     },
+	"entriesPageless": {
+        "prefix": "entriesPageless",
+        "body": [
+            "{",
+            "\t\"type\": \"entries\",",
+            "\t\"name\": \"$1\",",
+            "\t\"entries\": [",
+            "\t\t\"$2\"",
+            "\t]",
+            "}"
+        ],
+        "description": "Entries block with no page number, for nested entries"
+	},
     "quote": {
         "prefix": "quote",
         "body": [
@@ -93,6 +106,18 @@
             "}"
         ],
         "description": "List with style options. Remove the style line for default one with bullet points"
+    },
+    "bulletList": {
+        "prefix": "bulletList",
+        "body": [
+            "{",
+            "\t\"type\": \"list\",",
+            "\t\"items\": [",
+            "\t\t\"$1\"",
+            "\t]",
+            "}"
+        ],
+        "description": "Default list with bullet points"
     },
     "listItem": {
         "prefix": "listItem",
